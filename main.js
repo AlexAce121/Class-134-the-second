@@ -28,9 +28,9 @@ function draw() {
 
         objectDetector.detect(video , gotResult)
        for (i = 0; i < objects.length; i++) { 
-           if (objects[i]=="person") {
+           if (objects[i].label=="person") {
             document.getElementById("status").innerHTML = "Status: Baby Detected" ;
-            alarm.pause();
+            alarm.stop();
            } else {
             document.getElementById("status").innerHTML = "Status: Baby Not Detected" ; 
             alarm.play();
