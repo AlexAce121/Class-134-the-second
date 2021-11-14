@@ -30,7 +30,7 @@ function draw() {
        for (i = 0; i < objects.length; i++) { 
            if (objects[i]=="person") {
             document.getElementById("status").innerHTML = "Status: Baby Detected" ;
-            alarm.stop();
+            alarm.pause();
            } else {
             document.getElementById("status").innerHTML = "Status: Baby Not Detected" ; 
             alarm.play();
